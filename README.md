@@ -62,8 +62,8 @@ Asegúrate de tener instalados los siguientes elementos:
 
    - API en Go: [http://localhost:3000](http://localhost:3000)
    - API en Node: [http://localhost:4000](http://localhost:4000)
-   - Ruta de operación QR en Go: [http://localhost:3000](http://localhost:3000/api/v1/qr)
-   - Ruta de operación de Operaciones en Node: [http://localhost:3000](http://localhost:4000/api/v1/matrix/process)
+   - Ruta de operación QR en Go: [http://localhost:3000/api/v1/qr](http://localhost:3000/api/v1/qr)
+   - Ruta de operación de Operaciones en Node: [http://localhost:4000/api/v1/matrix/process](http://localhost:4000/api/v1/matrix/process)
 
 ---
 
