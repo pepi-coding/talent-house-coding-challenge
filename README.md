@@ -1,1 +1,0 @@
-# talent-house-coding-challenge

@@ -1,0 +1,68 @@
+# ======================
+# Go-related ignores
+# ======================
+# Binaries
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+*.test
+*.out
+
+# Go workspace & cache
+/bin/
+/pkg/
+/coverage.out
+
+# Dependency directories
+vendor/
+
+# Air (hot reloading)
+.air/
+.air.toml
+
+# IDEs and editors
+.idea/
+.vscode/
+*.swp
+
+# ======================
+# Node.js-related ignores
+# ======================
+# Dependency directory
+node_modules/
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+
+# Runtime
+.pids
+*.pid
+*.seed
+*.pid.lock
+
+# Coverage
+coverage/
+
+# Build output
+dist/
+build/
+
+# PM2 logs
+pids/
+*.pid
+*.log
+
+# ======================
+# General
+# ======================
+.DS_Store
+*.bak
+*.tmp
+*.orig

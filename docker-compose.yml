@@ -1,0 +1,22 @@
+version: "3.8"
+
+services:
+  go-api:
+    build:
+      context: ./go-api # Path to your Go API
+    ports:
+      - "3000:3000"
+    networks:
+      - app-network
+
+  node-api:
+    build:
+      context: ./node-api # Path to your Node API
+    ports:
+      - "4000:4000"
+    networks:
+      - app-network
+
+networks:
+  app-network:
+    driver: bridge
