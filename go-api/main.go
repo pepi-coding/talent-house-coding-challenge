@@ -11,14 +11,13 @@ import (
 )
 
 func main(){
-	// Load .env
 	if err := godotenv.Load(); err != nil {
 		log.Println("No .env file found, using default env vars.")
 	}
 
 	apiVersion := os.Getenv("API_VERSION")
 	if apiVersion == "" {
-		apiVersion = "v1" // default fallback
+		apiVersion = "v1"
 	}
 
 	app := fiber.New()
