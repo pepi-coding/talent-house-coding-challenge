@@ -1,106 +1,80 @@
-Here's a polished `README.md` for your project, using markdown formatting, emojis for clarity, and clear instructions for running the setup:
+# Proyecto de coding challenge
 
-```markdown
-# 🧩 Multi-API Dockerized Project
+Este proyecto contiene **dos APIs** que se ejecutan en contenedores aislados a través de Docker Compose:
 
-This project contains **two APIs** running in isolated containers via Docker Compose:
+- ⚙️ **API en Go** – construida con Golang 1.18
+- 🌐 **API en Node.js** – construida con Node.js 16
 
-- ⚙️ **Go API** – built with Golang 1.18
-- 🌐 **Node.js API** – built with Node.js 16
-
-Each service runs independently but shares a common Docker network for communication. Perfect for local development, testing, or building microservices!
+Cada servicio funciona de manera independiente, pero comparte una red común de Docker para la comunicación. ¡Perfecto para desarrollo local, pruebas o construir microservicios!
 
 ---
 
-## 📁 Project Structure
-```
+## 📁 Estructura del Proyecto
 
+```
 .
 ├── docker-compose.yml
 ├── go-api/
-│ ├── Dockerfile
-│ ├── go.mod
-│ ├── go.sum
-│ └── (Go source files)
+│   ├── Dockerfile
+│   ├── go.mod
+│   ├── go.sum
+│   └── (Archivos fuente de Go)
 └── node-api/
-├── Dockerfile
-├── package.json
-├── package-lock.json
-└── (Node source files)
-
-````
+    ├── Dockerfile
+    ├── package.json
+    ├── package-lock.json
+    └── (Archivos fuente de Node)
+```
 
 ---
 
-## 🚀 Getting Started
+## 🚀 Empezando
 
-### ✅ Prerequisites
+### ✅ Requisitos previos
 
-Make sure you have the following installed:
+Asegúrate de tener instalados los siguientes elementos:
 
 - [Docker](https://www.docker.com/)
-- [Docker Compose](https://docs.docker.com/compose/) (usually included with Docker Desktop)
+- [Docker Compose](https://docs.docker.com/compose/) (generalmente incluido con Docker Desktop)
 
 ---
 
-## 🔧 Running the Project
+## 🔧 Ejecutando el Proyecto
 
-1. **Clone the repository**:
+1. **Clona el repositorio**:
 
    ```bash
-   git clone https://github.com/your-username/your-repo-name.git
-   cd your-repo-name
-````
+   git clone https://github.com/pepi-coding/talent-house-coding-challenge.git
+   cd talent-house-coding-challenge
+   ```
 
-2. **Start the services** using Docker Compose:
+2. **Inicia los servicios** usando Docker Compose:
 
    ```bash
    docker-compose up --build
    ```
 
-   This will:
+   Esto hará lo siguiente:
 
-   - Build the Go API from the `go-api` folder
-   - Build the Node API from the `node-api` folder
-   - Run both containers on the same virtual network
+   - Construir la API en Go desde la carpeta `go-api`
+   - Construir la API en Node desde la carpeta `node-api`
+   - Ejecutar ambos contenedores en la misma red virtual
 
-3. **Access the APIs**:
+3. **Accede a las APIs**:
 
-   - Go API: [http://localhost:3000](http://localhost:3000)
-   - Node API: [http://localhost:4000](http://localhost:4000)
+   - API en Go: [http://localhost:3000](http://localhost:3000)
+   - API en Node: [http://localhost:4000](http://localhost:4000)
 
 ---
 
-## 🛑 Stopping the Services
+## 🛑 Detener los Servicios
 
-To stop the services:
+Para detener los servicios:
 
 ```bash
 docker-compose down
 ```
 
-This will stop and remove the containers, but not delete the images.
+Esto detendrá y eliminará los contenedores, pero no eliminará las imágenes.
 
 ---
-
-## 🛠️ Notes
-
-- Modify `docker-compose.yml` if you wish to link the APIs together or add more services.
-- Ensure any environment variables or API secrets are managed using `.env` files (not included in this repo for security).
-
----
-
-## 📬 Feedback & Contributions
-
-Feel free to open issues or submit pull requests. Contributions are welcome! 🙌
-
----
-
-## 📄 License
-
-This project is licensed under the MIT License. See the [LICENSE](./LICENSE) file for details.
-
-```
-
-Let me know if you'd like a badge section (for build status, Docker pulls, etc.) or sample API routes included!
-```
