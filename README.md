@@ -5,8 +5,6 @@ Este proyecto contiene **dos APIs** que se ejecutan en contenedores aislados a t
 - ⚙️ **API en Go** – construida con Golang 1.18
 - 🌐 **API en Node.js** – construida con Node.js 16
 
-Cada servicio funciona de manera independiente, pero comparte una red común de Docker para la comunicación. ¡Perfecto para desarrollo local, pruebas o construir microservicios!
-
 ---
 
 ## 📁 Estructura del Proyecto
